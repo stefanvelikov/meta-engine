@@ -120,7 +120,6 @@ async function isDirectory(filePath) {
   }
 }
 
-fetchSitemap();
 
 
 async function fetchResourceLinksAndUpdateSitemap() {
@@ -165,5 +164,49 @@ async function fetchResourceLinksAndUpdateSitemap() {
   }
 }
 
-// Ensure this function is called after fetching and processing the sitemap
-fetchResourceLinksAndUpdateSitemap();
+
+
+async function fixSitemapDomains() {
+  try {
+    // Read the current sitemap XML
+    const sitemapFilePath = path.join(outputFolder, sitemapFileName);
+    const sitemapData = await fs.readFile(sitemapFilePath, 'utf-8');
+    
+    // Parse the sitemap
+    const parser = new xml2js.Parser();
+    const sitemapObj = await parser.parseStringPromise(sitemapData);
+    
+    // Iterate over all URLs and replace processingDomain with sitemapDomain
+    sitemapObj.urlset.url.forEach(urlObj => {
+      let currentUrl = urlObj.loc[0].trim();
+      
+      // Replace any occurrence of processingDomain with sitemapDomain
+      if (currentUrl.includes(processingDomain)) {
+        currentUrl = currentUrl.replace(processingDomain, sitemapRealDomain);
+      }
+      
+      // Ensure the URL is correctly formatted in the sitemap
+      urlObj.loc[0] = currentUrl;
+    });
+
+    // Rebuild and save the updated sitemap
+    const builder = new xml2js.Builder();
+    const updatedSitemapXml = builder.buildObject(sitemapObj);
+
+    // Write the updated sitemap back to the file
+    await fs.writeFile(sitemapFilePath, updatedSitemapXml);
+
+    console.log(`Sitemap domains fixed and saved to ${sitemapFilePath}`);
+  } catch (error) {
+    console.error('Error fixing sitemap domains:', error.message);
+  }
+}
+
+
+async function processSitemapAndResources() {
+  await fetchSitemap();
+  await fetchResourceLinksAndUpdateSitemap();
+  await fixSitemapDomains();
+}
+
+processSitemapAndResources();

@@ -124,7 +124,7 @@ async function isDirectory(filePath) {
 
 async function fetchResourceLinksAndUpdateSitemap() {
   const resourcePageUrl = `${processingDomain}/resources`;
-  
+
   try {
     // Fetch the resources page
     const resourcePageContent = await axios.get(resourcePageUrl);
@@ -132,37 +132,51 @@ async function fetchResourceLinksAndUpdateSitemap() {
 
     // Find all elements with the class .layout394_card.is-link
     const linkElements = dom.window.document.querySelectorAll('.layout394_card.is-link');
-    const resourceLinks = Array.from(linkElements).map(el => el.href);
+
+    // Extract href attributes from the link elements
+    const resourceLinks = Array.from(linkElements).map(el => el.getAttribute('href'));
 
     // Debugging: Log the found links to check if they are being fetched correctly
     console.log('Found resource links:', resourceLinks);
 
-    // Fetch the sitemap
-    const response = await axios.get(sitemapUrl);
-    const parser = new xml2js.Parser();
-    const sitemapObj = await parser.parseStringPromise(response.data);
+    // Create the 'resources' folder if it doesn't exist
+    const resourcesFolderPath = path.join(outputFolder, 'resources');
+    await fs.mkdir(resourcesFolderPath, { recursive: true });
 
-    // Add the resource links to the sitemap if they are not already present
-    resourceLinks.forEach(link => {
-      const fullUrl = `${sitemapRealDomain}${link}`;
-      if (!sitemapObj.urlset.url.some(urlObj => urlObj.loc[0] === fullUrl)) {
-        // Add link to sitemap
-        sitemapObj.urlset.url.push({ loc: [fullUrl] });
-        console.log(`Adding ${fullUrl} to sitemap.`);
+    // Process each resource link
+    for (const link of resourceLinks) {
+      const fullUrl = `${processingDomain}${link}`;
+      
+      try {
+        // Fetch content of each resource page
+        const pageContent = await axios.get(fullUrl);
+        const dom = new JSDOM(pageContent.data);
+
+        // Process the fetched page content (e.g., clean it, remove unnecessary attributes)
+        let cleanedContent = pageContent.data;
+        cleanedContent = cleanedContent.replace(/data-wf-domain="[^"]*"/g, '')
+                                       .replace(/data-wf-page="[^"]*"/g, '')
+                                       .replace(/data-wf-site="[^"]*"/g, '');
+
+        // Extract the page name from the URL (e.g., 'upvio-webflow-redevelopment')
+        const pageName = link.split('/').filter(segment => segment).pop();
+        const fileName = `${pageName}.html`;
+
+        // Save the fetched content as 'page.html' directly inside the 'resources' folder
+        const filePath = path.join(resourcesFolderPath, fileName);
+        await fs.writeFile(filePath, cleanedContent);
+
+        console.log(`Content for ${fullUrl} fetched and saved to ${filePath}`);
+      } catch (error) {
+        console.error(`Error fetching content for ${fullUrl}:`, error.message);
       }
-    });
-
-    // Rebuild and save the updated sitemap
-    const builder = new xml2js.Builder();
-    const updatedSitemapXml = builder.buildObject(sitemapObj);
-    const sitemapFilePath = path.join(outputFolder, sitemapFileName);
-    await fs.writeFile(sitemapFilePath, updatedSitemapXml);
-
-    console.log(`Updated sitemap with resource links saved to ${sitemapFilePath}`);
+    }
   } catch (error) {
     console.error('Error fetching or processing resources page:', error.message);
   }
 }
+
+
 
 
 

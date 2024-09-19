@@ -115,3 +115,47 @@ async function isDirectory(filePath) {
 }
 
 fetchSitemap();
+
+
+async function fetchResourceLinksAndUpdateSitemap() {
+  const resourcePageUrl = `${processingDomain}/resources`;
+  
+  try {
+    // Fetch the resources page
+    const resourcePageContent = await axios.get(resourcePageUrl);
+    const dom = new JSDOM(resourcePageContent.data);
+
+    // Find all elements with the class .layout394_card.is-link
+    const linkElements = dom.window.document.querySelectorAll('.layout394_card.is-link');
+    const resourceLinks = Array.from(linkElements).map(el => el.href);
+
+    // Log the found links for debugging
+    console.log('Found resource links:', resourceLinks);
+
+    // Fetch the sitemap
+    const response = await axios.get(sitemapUrl);
+    const parser = new xml2js.Parser();
+    const sitemapObj = await parser.parseStringPromise(response.data);
+
+    // Add the resource links to the sitemap if they are not already present
+    resourceLinks.forEach(link => {
+      const fullUrl = `${sitemapRealDomain}${link}`;
+      if (!sitemapObj.urlset.url.some(urlObj => urlObj.loc[0] === fullUrl)) {
+        sitemapObj.urlset.url.push({ loc: [fullUrl] });
+      }
+    });
+
+    // Rebuild and save the updated sitemap
+    const builder = new xml2js.Builder();
+    const updatedSitemapXml = builder.buildObject(sitemapObj);
+    const sitemapFilePath = path.join(outputFolder, sitemapFileName);
+    await fs.writeFile(sitemapFilePath, updatedSitemapXml);
+
+    console.log(`Updated sitemap with resource links saved to ${sitemapFilePath}`);
+  } catch (error) {
+    console.error('Error fetching or processing resources page:', error.message);
+  }
+}
+
+// Add this function call after your sitemap fetch process
+fetchResourceLinksAndUpdateSitemap();

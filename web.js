@@ -38,7 +38,15 @@ async function fetchSitemap() {
     const parser = new xml2js.Parser();
     const sitemapObj = await parser.parseStringPromise(response.data);
 
-    const urls = sitemapObj.urlset.url.map(url => url.loc[0]);
+    // Process sitemap URLs
+    const urls = sitemapObj.urlset.url.map(url => {
+      let trimmedUrl = url.loc[0].trim();
+      // Replace webflow.io domain with agota.studio
+      if (trimmedUrl.includes(processingDomain)) {
+        trimmedUrl = trimmedUrl.replace(processingDomain, sitemapRealDomain);
+      }
+      return { loc: [trimmedUrl] };
+    });
 
     await fs.mkdir(outputFolder, { recursive: true });
 
@@ -46,11 +54,7 @@ async function fetchSitemap() {
       ...sitemapObj,
       urlset: {
         ...sitemapObj.urlset,
-        url: urls.map(url => {
-          const trimmedUrl = url.trim();
-          const absoluteUrl = new URL(trimmedUrl, processingDomain);
-          return { loc: `${sitemapRealDomain}${absoluteUrl.pathname}` };
-        }),
+        url: urls,
       },
     };
 
@@ -62,9 +66,10 @@ async function fetchSitemap() {
 
     console.log(`Updated sitemap saved to ${sitemapFilePath}`);
 
+    // Proceed to fetch and save content for each URL in the sitemap
     for (const url of urls) {
       try {
-        const pageContent = await axios.get(url.trim());
+        const pageContent = await axios.get(url.loc[0]);
         const dom = new JSDOM(pageContent.data);
         const hasFormTag = dom.window.document.querySelector('form');
 
@@ -76,7 +81,7 @@ async function fetchSitemap() {
             .replace(/data-wf-site="[^"]*"/g, '');
         }
 
-        const parsedUrl = new URL(url.trim());
+        const parsedUrl = new URL(url.loc[0]);
         const pathSegments = parsedUrl.pathname.split('/').filter(segment => segment);
 
         let currentFolderPath = outputFolder;
@@ -95,15 +100,16 @@ async function fetchSitemap() {
 
         await fs.writeFile(filePath, cleanedContent);
 
-        console.log(`Content for ${url} fetched and saved to ${filePath}`);
+        console.log(`Content for ${url.loc[0]} fetched and saved to ${filePath}`);
       } catch (error) {
-        console.error(`Error fetching content for ${url}:`, error.message);
+        console.error(`Error fetching content for ${url.loc[0]}:`, error.message);
       }
     }
   } catch (error) {
     console.error('Error fetching or processing sitemap:', error.message);
   }
 }
+
 
 async function isDirectory(filePath) {
   try {

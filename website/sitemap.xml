@@ -1,94 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io&#xD;
-        </loc>
+    <loc>https://agota.studio</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/style-guide&#xD;
-        </loc>
+    <loc>https://agota.studio/style-guide</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/work&#xD;
-        </loc>
+    <loc>https://agota.studio/work</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/resources&#xD;
-        </loc>
+    <loc>https://agota.studio/resources</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/project/upvio&#xD;
-        </loc>
+    <loc>https://agota.studio/project/upvio</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/contact&#xD;
-        </loc>
+    <loc>https://agota.studio/contact</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/figma-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/figma-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/adobe-xd-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/adobe-xd-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/sketch-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/sketch-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/invision-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/invision-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/affinity-designer-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/affinity-designer-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/adobe-photoshop-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/adobe-photoshop-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/adobe-illustrator-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/adobe-illustrator-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/moqups-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/moqups-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/zeplin-to-webflow&#xD;
-        </loc>
+    <loc>https://agota.studio/zeplin-to-webflow</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/pricing&#xD;
-        </loc>
+    <loc>https://agota.studio/pricing</loc>
   </url>
   <url>
-    <loc>&#xD;
-            https://agota-studio.webflow.io/with/kaufland&#xD;
-        </loc>
-  </url>
-  <url>
-    <loc>https://agota.studio/resources/why-web-design-is-crucial-for-your-business</loc>
-  </url>
-  <url>
-    <loc>https://agota.studio/resources/upvio-webflow-redevelopment</loc>
+    <loc>https://agota.studio/with/kaufland</loc>
   </url>
 </urlset>

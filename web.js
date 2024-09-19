@@ -216,11 +216,29 @@ async function fixSitemapDomains() {
   }
 }
 
+async function moveAndRenameResourcesFile() {
+  const sourceFile = path.join(outputFolder, 'resources.html');
+  const destinationFolder = path.join(outputFolder, 'resources');
+  const destinationFile = path.join(destinationFolder, 'index.html');
+
+  try {
+    // Ensure the destination folder exists
+    await fs.mkdir(destinationFolder, { recursive: true });
+
+    // Move and rename the file
+    await fs.rename(sourceFile, destinationFile);
+    console.log(`Moved and renamed resources.html to ${destinationFile}`);
+  } catch (error) {
+    console.error(`Error moving and renaming resources.html: ${error.message}`);
+  }
+}
+
 
 async function processSitemapAndResources() {
   await fetchSitemap();
   await fetchResourceLinksAndUpdateSitemap();
   await fixSitemapDomains();
+  await moveAndRenameResourcesFile();
 }
 
 processSitemapAndResources();

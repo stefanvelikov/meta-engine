@@ -135,7 +135,7 @@ async function fetchResourceLinksAndUpdateSitemap() {
     const linkElements = dom.window.document.querySelectorAll('.layout394_card.is-link');
     const resourceLinks = Array.from(linkElements).map(el => el.href);
 
-    // Log the found links for debugging
+    // Debugging: Log the found links to check if they are being fetched correctly
     console.log('Found resource links:', resourceLinks);
 
     // Fetch the sitemap
@@ -147,7 +147,9 @@ async function fetchResourceLinksAndUpdateSitemap() {
     resourceLinks.forEach(link => {
       const fullUrl = `${sitemapRealDomain}${link}`;
       if (!sitemapObj.urlset.url.some(urlObj => urlObj.loc[0] === fullUrl)) {
+        // Add link to sitemap
         sitemapObj.urlset.url.push({ loc: [fullUrl] });
+        console.log(`Adding ${fullUrl} to sitemap.`);
       }
     });
 
@@ -163,5 +165,5 @@ async function fetchResourceLinksAndUpdateSitemap() {
   }
 }
 
-// Add this function call after your sitemap fetch process
+// Ensure this function is called after fetching and processing the sitemap
 fetchResourceLinksAndUpdateSitemap();

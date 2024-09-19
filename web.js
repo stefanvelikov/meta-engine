@@ -139,14 +139,37 @@ async function fetchResourceLinksAndUpdateSitemap() {
     // Debugging: Log the found links to check if they are being fetched correctly
     console.log('Found resource links:', resourceLinks);
 
+    // Fetch the current sitemap
+    const sitemapFilePath = path.join(outputFolder, sitemapFileName);
+    const sitemapData = await fs.readFile(sitemapFilePath, 'utf-8');
+    const parser = new xml2js.Parser();
+    const sitemapObj = await parser.parseStringPromise(sitemapData);
+
+    // Add the resource links to the sitemap if they are not already present
+    resourceLinks.forEach(link => {
+      const fullUrl = `${sitemapRealDomain}${link}`;
+      // Only add if the link is not already in the sitemap
+      if (!sitemapObj.urlset.url.some(urlObj => urlObj.loc[0] === fullUrl)) {
+        sitemapObj.urlset.url.push({ loc: [fullUrl] });
+        console.log(`Adding ${fullUrl} to sitemap.`);
+      }
+    });
+
+    // Rebuild and save the updated sitemap
+    const builder = new xml2js.Builder();
+    const updatedSitemapXml = builder.buildObject(sitemapObj);
+    await fs.writeFile(sitemapFilePath, updatedSitemapXml);
+
+    console.log(`Updated sitemap with resource links saved to ${sitemapFilePath}`);
+
     // Create the 'resources' folder if it doesn't exist
     const resourcesFolderPath = path.join(outputFolder, 'resources');
     await fs.mkdir(resourcesFolderPath, { recursive: true });
 
-    // Process each resource link
+    // Process each resource link and save the content
     for (const link of resourceLinks) {
       const fullUrl = `${processingDomain}${link}`;
-      
+
       try {
         // Fetch content of each resource page
         const pageContent = await axios.get(fullUrl);
@@ -175,6 +198,7 @@ async function fetchResourceLinksAndUpdateSitemap() {
     console.error('Error fetching or processing resources page:', error.message);
   }
 }
+
 
 
 

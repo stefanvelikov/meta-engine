@@ -147,7 +147,7 @@ async function fetchResourceLinksAndUpdateSitemap() {
 
     // Add the resource links to the sitemap if they are not already present
     resourceLinks.forEach(link => {
-      const fullUrl = `${sitemapRealDomain}${link}`;
+      const fullUrl = `${processingDomain}${link}`;
       // Only add if the link is not already in the sitemap
       if (!sitemapObj.urlset.url.some(urlObj => urlObj.loc[0] === fullUrl)) {
         sitemapObj.urlset.url.push({ loc: [fullUrl] });

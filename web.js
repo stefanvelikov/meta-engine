@@ -43,7 +43,7 @@ async function fetchSitemap() {
       let trimmedUrl = url.loc[0].trim();
       // Replace webflow.io domain with agota.studio
       if (trimmedUrl.includes(processingDomain)) {
-        trimmedUrl = trimmedUrl.replace(processingDomain, sitemapRealDomain);
+        trimmedUrl = trimmedUrl.replace(processingDomain, processingDomain);
       }
       return { loc: [trimmedUrl] };
     });

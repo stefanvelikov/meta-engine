@@ -220,7 +220,7 @@ async function fixSitemapDomains() {
       
       // Replace any occurrence of processingDomain with sitemapDomain
       if (currentUrl.includes(processingDomain)) {
-        currentUrl = currentUrl.replace(processingDomain, sitemapRealDomain);
+        currentUrl = currentUrl.replace(processingDomain, processingDomain);
       }
       
       // Ensure the URL is correctly formatted in the sitemap

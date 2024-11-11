@@ -1,0 +1,1137 @@
+<!DOCTYPE html><!-- Last Published: Tue Oct 01 2024 13:56:48 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.metaengine.gg" data-wf-page="63a61ad02c0fcecb144d046e" data-wf-site="636c0fe2570eeae70c2de171" lang="en"><head><meta charset="utf-8"/><title>New Modal Popup</title><meta content="New Modal Popup" property="og:title"/><meta content="New Modal Popup" property="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/css/metaengine.webflow.703fde91c.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Varela Round:400"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/638e89ea9cc09c7b35d528f2_Favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/638e89ed154707af7320eaa8_Webclip.png" rel="apple-touch-icon"/><link href="https://www.metaengine.gg//new-modal-popup" rel="canonical"/><meta name="author" content="MetaEngine">
+<meta name="copyright" content="MetaEngine">
+<meta name="google-site-verification" content="6UxPUknxo4swWklDcjcZXMdXZar1w0AVPyHIQ8cnPbw" />
+<meta name="msvalidate.01" content="2F90B8DFE44BF19F075E1481BC72E729" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5FG6MMX');</script>
+<!-- End Google Tag Manager -->
+
+<!-- anti-flicker snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-5FG6MMX':true});</script>
+
+<!-- [Attributes by Finsweet] Disable scrolling -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js"></script>
+
+<!-- [Attributes by Finsweet] Mirror click events -->
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-mirrorclick@1/mirrorclick.js"></script>
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	"name": "MetaEngine",
+	"logo": "https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/63e0cdbe81d0f90e9df2dd34_MetaEngine.svg",
+	"url": "https://www.metaengine.gg/",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Bordeaux",
+		"addressRegion": "Aquitaine",
+		"addressCountry": "France"
+	},
+	"sameAs": ["https://www.linkedin.com/company/metaengine/", "https://twitter.com/meta_engine", "https://metaengine.medium.com/", "https://discord.gg/rDqmrJrQeG"]
+}
+</script>
+
+<style>
+  
+  html {
+  scroll-behavior: initial;
+}
+  
+  html,body {
+  min-height: 100%;
+  height: auto;
+}
+
+</style>
+<meta name="robots" content="noindex">
+<script type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};</script></head><body><div class="global-styles hide w-embed"><style>
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.is-active { background-color: #141414; }
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+    
+    .footer1_legal-list {
+    	width: auto !important;
+		}
+    
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+@media only screen and (min-width: 768px){
+  /*Text to 2 lines and 4 lines*/
+  .post-short-desc, .related-blog-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      height: auto;
+  }
+  .post-short-desc {
+    -webkit-line-clamp: 4;
+      line-clamp: 4;
+  }
+  .related-blog-title {
+  -webkit-line-clamp: 2;
+      line-clamp: 2;
+  }
+}
+
+@media only screen and (min-width: 1512px) {
+  .container-largee {
+  	max-width: 85rem;
+  }
+}
+
+@media only screen and (min-width: 1728px) and (max-width: 1919px) {
+  .container-largee {
+  	max-width: 85rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+	.container-large {
+  	max-width: 95rem;
+  }
+}
+
+.navbar2_component .w-nav-overlay {
+	top: 0% !important;
+}
+
+.navbar2_menu-button.w--open .menu-icon2_line-top, .navbar2_menu-button.w--open .menu-icon2_line-middle, .navbar2_menu-button.w--open .menu-icon2_line-bottom  {
+	background: white !important;
+}
+
+.blog-item.is-active .post-category,
+.categories-list.is-active .tag-name
+{
+    color: #FFF;
+    border-color: #FFF;
+}
+
+p.is-active,
+.footer1_component.is-active .footer1_logo-link,
+.footer1_component.is-active .footer1_heading,
+.footer1_component.is-active .footer1_link,
+.footer1_component.is-active .footer1_credit-text,
+.footer1_component.is-active .footer1_legal-link,
+.footer1_component.is-active .footer1_menu-logo-link,
+
+/*blogpage*/
+.bog-item-content.is-active .link-block-2, 
+.bog-item-content.is-active .post-title,
+.bog-item-content.is-active .post-short-desc,
+.categories-list.is-active .categorylink,
+.blog-post-sidebar.is-active .sidebar-title,
+.categories-list.is-active .related-blog-title,
+.categories-list.is-active .recent-blog-date,
+.categories-list.is-active .tag-name,
+.blog-page-head.is-active,
+.blog-content.is-active,
+.blog-item.is-active .post-category,
+.blog-item.is-active,
+.related-articles.is-active,
+.blog-item.is-active .read-more
+{
+	color: white !important;
+}
+
+.footer1_component.is-active .footer1_link, .footer1_text.is-below-form.is-active, .footer1_text-underline.is-active, .footer1_component.is-active .footer1_credit-text {
+    color: rgb(255 255 255 / 60%) !important;
+}
+
+.footer1_component.is-active .footer1_link.is-heading {
+    color: white !important;
+}
+
+p.community-create_text.is-active, p.community-join_list-item-text.is-active, .platform-cloud_item-text.is-active, p.platform-creative_tag-text.is-active, p.careers-positions_text.is-active, .blog_date, .blog-content_item-heading, .blog-content_item-text {
+    color: inherit !important;
+}
+
+.blog-item.is-active {
+	background-color: #242424;
+}
+
+/* .navbar2_logo.is-active {
+  color: #fff !important;
+}
+
+.navbar2_link.is-active.w--current {
+    color: #D8E29A !important;
+}
+*/
+
+
+.overlay_base.is-active {
+    filter: invert(1);
+}
+
+.overlay_base.is-future-video.is-video-wrap.is-active {
+    filter: none;
+}
+
+.btn.is-navbar.is-active:hover {
+    background-color: #D8E29A;
+}
+
+.btn.is-secondary.is-theme.is-active:hover {
+    background-color: #141414;
+    color: #D8E29A;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+video::-webkit-media-controls, video::-moz-media-controls, video::-o-media-controls, video::-ms-media-controls {  
+display: none !important;
+}
+
+.modal_wrapper, .modal_popup-content {
+	transform: translateZ(0);
+	isolation: isolate;
+}
+   
+   
+.button.is-button-bigger.is-modal.is-next.is-disabled {
+	pointer-events: none;
+  user-select: none;
+}
+
+.modal_item p.is-active {
+    color: #141414 !important;
+}
+
+.modal_popup-content p.is-active {
+	color: white !important;
+}
+
+  html { font-size: calc(0.625rem + 0.41666666666666663vw); }
+  @media screen and (max-width:1920px) { html { font-size: calc(0.625rem + 0.41666666666666674vw); } }
+  @media screen and (max-width:1440px) { html { font-size: calc(0.7190426638917794rem + 0.3121748178980229vw); } }
+  @media screen and (max-width:479px) { html { font-size: calc(0.7494769874476988rem + 0.8368200836820083vw); } }
+  
+  
+ 
+.fs_selectcustom-1_field {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* Remove default arrow */
+}
+
+.fs_selectcustom-1_field::-ms-expand {
+    display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+
+blockquote.is-active {
+    color: white !important;
+}
+
+.fs_radio-1_error.is-active {
+    color: #cf1c1c !important;
+}
+body.is-active .menu-icon2_line-top, body.is-active .menu-icon2_line-middle, body.is-active .menu-icon2_line-bottom {
+	background: white !important;
+}
+body.is-active .navbar2_component.is-active.is-sticked .menu-icon2_line-top, body.is-active .navbar2_component.is-active.is-sticked .menu-icon2_line-middle, body.is-active .navbar2_component.is-active.is-sticked .menu-icon2_line-bottom {
+	background: #141414 !important;
+}
+.navbar2_menu-button.w--open .menu-icon2_line-top, .navbar2_menu-button.w--open .menu-icon2_line-middle, .navbar2_menu-button.w--open .menu-icon2_line-bottom {
+	background: white !important;
+}
+body.is-active .navbar2_component.is-active.is-sticked .navbar2_menu-button.w--open .menu-icon2_line-top, body.is-active .navbar2_component.is-active.is-sticked .navbar2_menu-button.w--open .menu-icon2_line-middle, body.is-active .navbar2_component.is-active.is-sticked .navbar2_menu-button.w--open .menu-icon2_line-bottom {
+    background: white !important;
+}
+.navbar2_component.is-active.is-sticked.navbar2_opened .navbar2_logo.is-active {
+    color: white !important;
+}
+body.is-active .navbar2_logo.is-active {
+    color: white !important;
+}
+.navbar2_component.is-active.is-sticked .navbar2_logo.is-active, .banner-text.is-active {
+	color: #141414 !important;
+} 
+
+</style></div><div id="modal_8" fs-modal-element="modal-8" role="dialog" aria-modal="true" aria-labelledby="Together, we will build the best community" fs-scrolldisable-element="when-visible" class="modal_item is-gd"><div fs-scrolldisable-element="disable" fs-modal-element="close-8" aria-hidden="true" class="modal_cover"></div><div class="modal_wrapper"><div aria-roledescription="close-modal-trigger" class="modal_close" fs-scrolldisable-element="enable" aria-label="Close modal" role="button" aria-controls="modal_8" fs-modal-element="close-8" aria-expanded="false" tabindex="0"><div class="modal_close-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24">
+<path fill="CurrentColor" d="M14.5,12l9-9c0.7-0.7,0.7-1.8,0-2.5c-0.7-0.7-1.8-0.7-2.5,0l-9,9l-9-9c-0.7-0.7-1.8-0.7-2.5,0 c-0.7,0.7-0.7,1.8,0,2.5l9,9l-9,9c-0.7,0.7-0.7,1.8,0,2.5c0.7,0.7,1.8,0.7,2.5,0l9-9l9,9c0.7,0.7,1.8,0.7,2.5,0 c0.7-0.7,0.7-1.8,0-2.5L14.5,12z"/>
+</svg></div></div><div class="modal_column is-video"><div data-poster-url="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637735cf15fcfe661e06e02d_Eyes 720-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637735cf15fcfe661e06e02d_Eyes 720-transcode.mp4,https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637735cf15fcfe661e06e02d_Eyes 720-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="modal_video is-first w-background-video w-background-video-atom"><video id="6e4e3b88-baf1-8b3c-6d20-94b78cb294dd-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637735cf15fcfe661e06e02d_Eyes 720-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637735cf15fcfe661e06e02d_Eyes 720-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637735cf15fcfe661e06e02d_Eyes 720-transcode.webm" data-wf-ignore="true"/></video></div><div data-poster-url="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637741a7c7a7e970e7ce7f85_Hand monk-poster-00001.jpg" data-video-urls="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637741a7c7a7e970e7ce7f85_Hand monk-transcode.mp4,https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637741a7c7a7e970e7ce7f85_Hand monk-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="modal_video is-second w-background-video w-background-video-atom"><video id="6e4e3b88-baf1-8b3c-6d20-94b78cb294de-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637741a7c7a7e970e7ce7f85_Hand monk-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637741a7c7a7e970e7ce7f85_Hand monk-transcode.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/637741a7c7a7e970e7ce7f85_Hand monk-transcode.webm" data-wf-ignore="true"/></video></div></div><div class="modal_column is-content"><div data-delay="4000" data-animation="cross" class="modal_slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="250" data-infinite="false"><div class="modal_slider-mask w-slider-mask"><div class="modal_slider-slide w-slide"><div class="modal_slider-item"><p class="modal_subheading">Take a minute to answer a few questions</p><p class="modal_heading is-oc">Together, we will build the best community</p><a fs-mirrorclick-element="trigger-8" href="#" class="button is-button-bigger is-modal is-next w-button">Get Started</a></div></div><div class="modal_slider-slide w-slide"><div class="modal_slider-item"><p class="modal_heading is-normal">I am a:</p><div id="gd-step2" class="fs_modal-1_form-block w-form"><form id="wf-form-Game-Developer-0" name="wf-form-Game-Developer-2" data-name="Game Developer" method="get" class="fs_modal-1_form" data-wf-page-id="63a61ad02c0fcecb144d046e" data-wf-element-id="6e4e3b88-baf1-8b3c-6d20-94b78cb2950a"><div class="fs_modal-1_form-row"><div class="fs_modal-1_form-column is-second"><div class="fs_radio-1_component"><div aria-label="I am a? Choose One For Now" role="radiogroup" class="fs_radio-1_group is-two"><label class="fs_radio-1_field w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom fs_radio-1_button w-radio-input"></div><input id="gd-game-dev" type="radio" name="I-am-a" data-name="I am a?" style="opacity:0;position:absolute;z-index:-1" value="Game Developer"/><span fs-inputactive-class="is-active-inputactive" class="fs_radio-1_label w-form-label" for="gd-game-dev">Game Developer</span></label><label class="fs_radio-1_field is-active-inputactive w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom fs_radio-1_button w-radio-input"></div><input id="gd-game-designer" type="radio" name="I-am-a" data-name="I am a?" style="opacity:0;position:absolute;z-index:-1" value="Designer"/><span fs-inputactive-class="is-active-inputactive" class="fs_radio-1_label w-form-label" for="gd-game-designer">Game Designer</span></label></div><input class="form_field is-ther w-node-_6e4e3b88-baf1-8b3c-6d20-94b78cb29517-144d046e w-input" maxlength="256" name="Other-3" data-name="Other 3" placeholder="Other" type="text" id="gd-other-input"/></div></div></div></form><div class="fs_modal-1_form-sucess w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="fs_modal-1_form-error w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><a fs-mirrorclick-element="trigger-8" href="#" class="button is-button-bigger is-modal is-next is-disabled w-button">Next</a></div></div><div class="modal_slider-slide w-slide"><div class="modal_slider-item"><p class="modal_heading is-normal">Are you currently building anything?</p><div id="gd-step3" class="fs_modal-1_form-block w-form"><form id="wf-form-Game-Developer" name="wf-form-Game-Developer" data-name="Game Developer" method="get" class="fs_modal-1_form" data-wf-page-id="63a61ad02c0fcecb144d046e" data-wf-element-id="9c321fa2-db08-9d48-b6eb-12f5a75add50"><div class="fs_modal-1_form-row"><div class="fs_modal-1_form-column is-second"><div class="fs_radio-1_component"><div aria-label="I am a? Choose One For Now" role="radiogroup" class="fs_radio-1_group is-two"><label class="fs_radio-1_field w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom fs_radio-1_button w-radio-input"></div><input id="gd-step3-yes" type="radio" name="Are-you-currently-building-anything" data-name="Are you currently building anything?" style="opacity:0;position:absolute;z-index:-1" value="Yes"/><span fs-inputactive-class="is-active-inputactive" class="fs_radio-1_label w-form-label" for="gd-step3-yes">Yes</span></label><label class="fs_radio-1_field is-active-inputactive w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom fs_radio-1_button w-radio-input"></div><input id="gd-step3-no" type="radio" name="Are-you-currently-building-anything" data-name="Are you currently building anything?" style="opacity:0;position:absolute;z-index:-1" value="No"/><span fs-inputactive-class="is-active-inputactive" class="fs_radio-1_label w-form-label" for="gd-step3-no">No</span></label></div></div></div></div></form><div class="fs_modal-1_form-sucess w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="fs_modal-1_form-error w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><a fs-mirrorclick-element="trigger-8" href="#" class="button is-button-bigger is-modal is-next is-disabled w-button">Next</a></div></div><div class="modal_slider-slide w-slide"><div class="modal_slider-item"><p class="modal_heading is-smaller">If yes:<br/>What types of games or experiences are you working on?</p><div id="gd-step4" class="w-form"><form name="wf-form-Game-Developer-3" data-name="Game Developer" method="get" id="wf-form-Game-Developer-1" data-wf-page-id="63a61ad02c0fcecb144d046e" data-wf-element-id="6e4e3b88-baf1-8b3c-6d20-94b78cb29525"><select id="gd-select" name="Game-Developer-Select" data-name="Game Developer Select" class="fs_selectcustom-1_field w-select"><option value="">Select one...</option><option value="sandbox or metaverse open world experience">Sandbox or Metaverse Open World Experience</option><option value="real-time strategy (RTS)">Real-time strategy (RTS)</option><option value="shooters (FPS and TPS)">Shooters (FPS and TPS)</option><option value="multiplayer online battle arena (MOBA)">Multiplayer online battle arena (MOBA)</option><option value="role-playing (RPG, ARPG, and More)">Role-playing (RPG, ARPG, and More)</option><option value="simulation and sports">Simulation and sports</option><option value="puzzlers and party games">Puzzlers and party games</option><option value="action-adventure">Action-adventure</option><option value="survival and horror">Survival and horror</option><option value="platformer">Platformer</option><option value="other: please explain">Other</option></select><input class="form_field is-other w-input" maxlength="256" name="field" data-name="Field" placeholder="Other: Please explain" type="text" id="gd-select-other" required=""/><input type="submit" data-wait="Please wait..." class="hide w-button" value="Submit"/></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><a fs-mirrorclick-element="trigger-8" href="#" class="button is-button-bigger is-modal is-next is-disabled w-button">Next</a></div></div><div class="modal_slider-slide w-slide"><div class="modal_slider-item"><p class="modal_heading is-smaller">What types of games or experiences have you built before?</p><div id="gd-step5" class="w-form"><form name="wf-form-Game-Developer-3" data-name="Game Developer" method="get" id="wf-form-Game-Developer-2" data-wf-page-id="63a61ad02c0fcecb144d046e" data-wf-element-id="395dc5d5-44b3-8cfb-7ea0-74784fb3d912"><select id="gd-select1" name="Game-Developer-Select-2" data-name="Game Developer Select 2" class="fs_selectcustom-1_field w-select"><option value="">Select one...</option><option value="sandbox or metaverse open world experience">Sandbox or Metaverse Open World Experience</option><option value="real-time strategy (RTS)">Real-time strategy (RTS)</option><option value="shooters (FPS and TPS)">Shooters (FPS and TPS)</option><option value="multiplayer online battle arena (MOBA)">Multiplayer online battle arena (MOBA)</option><option value="role-playing (RPG, ARPG)">Role-playing (RPG, ARPG, and More)</option><option value="simulation and sports">Simulation and sports</option><option value="puzzlers and party games">Puzzlers and party games</option><option value="action-adventure">Action-adventure</option><option value="survival and horror">Survival and horror</option><option value="platformer">Platformer</option><option value="none">None</option><option value="other">Other</option></select><input class="form_field is-other w-input" maxlength="256" name="field" data-name="Field" placeholder="Other: Please explain" type="text" id="gd-select1-other" required=""/><input type="submit" data-wait="Please wait..." class="hide w-button" value="Submit"/></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><a fs-mirrorclick-element="trigger-8" href="#" class="button is-button-bigger is-modal is-next is-disabled w-button">Next</a></div></div><div class="modal_slider-slide w-slide"><div class="modal_slider-item"><p class="modal_heading is-normal">What else are you interested in building?</p><div id="gd-step6" class="w-form"><form name="wf-form-Game-Developer-3" data-name="Game Developer" method="get" id="wf-form-Game-Developer-3" data-wf-page-id="63a61ad02c0fcecb144d046e" data-wf-element-id="1b9c6c09-124d-310f-6fcd-170877f63b78"><select id="gd-select2" name="Game-Developer-Select-2" data-name="Game Developer Select 2" class="fs_selectcustom-1_field w-select"><option value="">Select one...</option><option value="Metaverse experiences for big consumer brands">Metaverse experiences for big consumer brands</option><option value="Web3 P2E or L2E games">Web3 P2E or L2E games</option><option value="Digital twins of real life experiences">Digital twins of real life experiences</option><option value="High impact experiences to support social causes like global warming">High impact experiences to support social causes like global warming</option><option value="Indie games">Indie games</option><option value="AAA games">AAA games</option><option value="Other">Other</option></select><input type="submit" data-wait="Please wait..." class="hide w-button" value="Submit"/></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><a fs-mirrorclick-element="trigger-8" href="#" class="button is-button-bigger is-modal is-next is-disabled w-button">next</a></div></div><div class="modal_slider-slide w-slide"><div class="modal_slider-item"><p class="modal_heading is-smaller">Would you be interested in getting early access to a MetaEngine sandbox developer environment?</p><div id="gd-step7" class="fs_modal-1_form-block w-form"><form id="wf-form-Game-Developer-5" name="wf-form-Game-Developer" data-name="Game Developer" method="get" class="fs_modal-1_form" data-wf-page-id="63a61ad02c0fcecb144d046e" data-wf-element-id="7539ea5b-35e3-b07b-abe8-9f2508db18e0"><div class="fs_modal-1_form-row"><div class="fs_modal-1_form-column is-second"><div class="fs_radio-1_component"><div aria-label="I am a? Choose One For Now" role="radiogroup" class="fs_radio-1_group is-two"><label class="fs_radio-1_field w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom fs_radio-1_button w-radio-input"></div><input id="gd-step7-yes" type="radio" name="Are-you-currently-building-anything" data-name="Are you currently building anything?" style="opacity:0;position:absolute;z-index:-1" value="Yes"/><span fs-inputactive-class="is-active-inputactive" class="fs_radio-1_label w-form-label" for="gd-step7-yes">Yes</span></label><label class="fs_radio-1_field is-active-inputactive w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom fs_radio-1_button w-radio-input"></div><input id="gd-step7-no" type="radio" name="Are-you-currently-building-anything" data-name="Are you currently building anything?" style="opacity:0;position:absolute;z-index:-1" value="No"/><span fs-inputactive-class="is-active-inputactive" class="fs_radio-1_label w-form-label" for="gd-step7-no">No</span></label><label class="fs_radio-1_field is-active-inputactive w-radio"><div class="w-form-formradioinput w-form-formradioinput--inputType-custom fs_radio-1_button w-radio-input"></div><input id="gd-step7-maybe" type="radio" name="Are-you-currently-building-anything" data-name="Are you currently building anything?" style="opacity:0;position:absolute;z-index:-1" value="No"/><span fs-inputactive-class="is-active-inputactive" class="fs_radio-1_label w-form-label" for="gd-step7-maybe">Maybe</span></label></div></div></div></div></form><div class="fs_modal-1_form-sucess w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="fs_modal-1_form-error w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><a fs-mirrorclick-element="trigger-8" href="#" class="button is-button-bigger is-modal is-submit is-disabled w-button">Submit</a></div></div><div class="modal_slider-slide is-thank-you w-slide"><div class="modal_slider-item is-thank-you"><p class="modal_heading">Thanks. <br/>You’re on the waitlist!</p><p class="modal_text">We’ll be in touch soon. In the meantime please follow us on social media for updates</p><div class="modal_icons"><a aria-label="Twitter" href="https://twitter.com/meta_engine" target="_blank" class="modal_icon-link w-inline-block"><div class="modal_icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="126.44 2.28 589 589"><circle cx="420.944" cy="296.781" r="294.5" fill="#2daae1"></circle><path d="M609.773 179.634c-13.891 6.164-28.811 10.331-44.498 12.204 16.01-9.587 28.275-24.779 34.066-42.86a154.78 154.78 0 0 1-49.209 18.801c-14.125-15.056-34.267-24.456-56.551-24.456-42.773 0-77.462 34.675-77.462 77.473 0 6.064.683 11.98 1.996 17.66-64.389-3.236-121.474-34.079-159.684-80.945-6.672 11.446-10.491 24.754-10.491 38.953 0 26.875 13.679 50.587 34.464 64.477a77.122 77.122 0 0 1-35.097-9.686v.979c0 37.54 26.701 68.842 62.145 75.961-6.511 1.784-13.344 2.716-20.413 2.716-4.998 0-9.847-.473-14.584-1.364 9.859 30.769 38.471 53.166 72.363 53.799-26.515 20.785-59.925 33.175-96.212 33.175-6.25 0-12.427-.373-18.491-1.104 34.291 21.988 75.006 34.824 118.759 34.824 142.496 0 220.428-118.052 220.428-220.428 0-3.361-.074-6.697-.236-10.021a157.855 157.855 0 0 0 38.707-40.158z" fill="#fff"></path></svg></div></a><a aria-label="LinkedIn" href="https://www.linkedin.com/company/metaengine/" target="_blank" class="modal_icon-link w-inline-block"><div class="modal_icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72"><g fill="none" fill-rule="evenodd"><path d="M36,72 L36,72 C55.882251,72 72,55.882251 72,36 L72,36 C72,16.117749 55.882251,-3.65231026e-15 36,0 L36,0 C16.117749,3.65231026e-15 -2.4348735e-15,16.117749 0,36 L0,36 C2.4348735e-15,55.882251 16.117749,72 36,72 Z" fill="#007EBB"></path><path d="M59,57 L49.959375,57 L49.959375,41.6017895 C49.959375,37.3800228 48.3552083,35.0207581 45.0136719,35.0207581 C41.3785156,35.0207581 39.4792969,37.4759395 39.4792969,41.6017895 L39.4792969,57 L30.7666667,57 L30.7666667,27.6666667 L39.4792969,27.6666667 L39.4792969,31.6178624 C39.4792969,31.6178624 42.0989583,26.7704897 48.3236979,26.7704897 C54.5455729,26.7704897 59,30.5699366 59,38.4279486 L59,57 Z M20.372526,23.8257036 C17.4048177,23.8257036 15,21.4020172 15,18.4128518 C15,15.4236864 17.4048177,13 20.372526,13 C23.3402344,13 25.7436198,15.4236864 25.7436198,18.4128518 C25.7436198,21.4020172 23.3402344,23.8257036 20.372526,23.8257036 Z M15.8736979,57 L24.958724,57 L24.958724,27.6666667 L15.8736979,27.6666667 L15.8736979,57 Z" fill="#FFF"></path></g></svg></div></a></div></div></div></div><div class="modal_slider-arrow is-back w-slider-arrow-left"><div class="modal_close-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0.64 15 14.73"><path d="M14 9C14.5523 9 15 8.55228 15 8C15 7.44772 14.5523 7 14 7V9ZM0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="white"></path></svg></div></div><div fs-mirrorclick-element="target-8" class="modal_slider-arrow pointer-events-off w-slider-arrow-right"><div class="modal_slider-arrow-icon w-icon-slider-right"></div></div><div class="modal_slider-nav w-slider-nav w-num"></div></div><div class="hide w-embed"><div id="gameDevExtraCode1">
+
+<div id="mauticform_gamedevelopersform_what_types_of_games_or_ex1" class="mauticform-row mauticform-radiogrp mauticform-field-3">
+                <label class="mauticform-label" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_SandboxorMetaverseOpenWorldExperience1">What types of games or experiences are you working on?</label>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_sandboxormetaverseopenworldexperience0" type="radio" value="sandbox or metaverse open world experience">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_sandboxormetaverseopenworldexperience0" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_sandboxormetaverseopenworldexperience0" class="mauticform-radiogrp-label">Sandbox or Metaverse Open World Experience</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_realtimestrategyRTS1" type="radio" value="real-time strategy (RTS)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_realtimestrategyRTS1" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_realtimestrategyRTS1" class="mauticform-radiogrp-label">Real-time strategy (RTS)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_shootersFPSandTPS2" type="radio" value="shooters (FPS and TPS)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_shootersFPSandTPS2" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_shootersFPSandTPS2" class="mauticform-radiogrp-label">Shooters (FPS and TPS)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_multiplayeronlinebattlearenaMOBA3" type="radio" value="multiplayer online battle arena (MOBA)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_multiplayeronlinebattlearenaMOBA3" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_multiplayeronlinebattlearenaMOBA3" class="mauticform-radiogrp-label">Multiplayer online battle arena (MOBA)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_roleplayingRPGARPGandMore4" type="radio" value="role-playing (RPG, ARPG, and More)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_roleplayingRPGARPGandMore4" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_roleplayingRPGARPGandMore4" class="mauticform-radiogrp-label">Role-playing (RPG, ARPG, and More)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_simulationandsports5" type="radio" value="simulation and sports">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_simulationandsports5" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_simulationandsports5" class="mauticform-radiogrp-label">Simulation and sports</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_puzzlersandpartygames6" type="radio" value="puzzlers and party games">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_puzzlersandpartygames6" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_puzzlersandpartygames6" class="mauticform-radiogrp-label">Puzzlers and party games</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_actionadventure7" type="radio" value="action-adventure">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_actionadventure7" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_actionadventure7" class="mauticform-radiogrp-label">Action-adventure</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_survivalandhorror8" type="radio" value="survival and horror">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_survivalandhorror8" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_survivalandhorror8" class="mauticform-radiogrp-label">Survival and horror</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_platformer9" type="radio" value="platformer">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_platformer9" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_platformer9" class="mauticform-radiogrp-label">Platformer</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex1]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex1_otherpleaseexplain10" type="radio" value="other: please explain">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex1_otherpleaseexplain10" for="mauticform_radiogrp_radio_what_types_of_games_or_ex1_otherpleaseexplain10" class="mauticform-radiogrp-label">Other: Please explain</label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+            
+            
+     </div></div><div class="hide w-embed"><div id="gameDevExtraCode2">
+
+  <div id="mauticform_gamedevelopersform_what_types_of_games_or_ex" data-validate="what_types_of_games_or_ex" data-validation-type="radiogrp" class="mauticform-row mauticform-radiogrp mauticform-field-4 mauticform-required">
+                <label class="mauticform-label" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_SandboxorMetaverseOpenWorldExperience1">What types of games or experiences have you built before?</label>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_sandboxormetaverseopenworldexperience0" type="radio" value="sandbox or metaverse open world experience">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_sandboxormetaverseopenworldexperience0" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_sandboxormetaverseopenworldexperience0" class="mauticform-radiogrp-label">Sandbox or Metaverse Open World Experience</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_realtimestrategyRTS1" type="radio" value="real-time strategy (RTS)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_realtimestrategyRTS1" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_realtimestrategyRTS1" class="mauticform-radiogrp-label">Real-time strategy (RTS)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_shootersFPSandTPS2" type="radio" value="shooters (FPS and TPS)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_shootersFPSandTPS2" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_shootersFPSandTPS2" class="mauticform-radiogrp-label">Shooters (FPS and TPS)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_multiplayeronlinebattlearenaMOBA3" type="radio" value="multiplayer online battle arena (MOBA)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_multiplayeronlinebattlearenaMOBA3" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_multiplayeronlinebattlearenaMOBA3" class="mauticform-radiogrp-label">Multiplayer online battle arena (MOBA)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_roleplayingRPGARPG4" type="radio" value="role-playing (RPG, ARPG)">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_roleplayingRPGARPG4" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_roleplayingRPGARPG4" class="mauticform-radiogrp-label">Role-playing (RPG, ARPG, and More)</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_simulationandsports5" type="radio" value="simulation and sports">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_simulationandsports5" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_simulationandsports5" class="mauticform-radiogrp-label">Simulation and sports</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_puzzlersandpartygames6" type="radio" value="puzzlers and party games">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_puzzlersandpartygames6" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_puzzlersandpartygames6" class="mauticform-radiogrp-label">Puzzlers and party games</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_actionadventure7" type="radio" value="action-adventure">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_actionadventure7" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_actionadventure7" class="mauticform-radiogrp-label">Action-adventure</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_survivalandhorror8" type="radio" value="survival and horror">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_survivalandhorror8" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_survivalandhorror8" class="mauticform-radiogrp-label">Survival and horror</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_platformer9" type="radio" value="platformer">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_platformer9" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_platformer9" class="mauticform-radiogrp-label">Platformer</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_none10" type="radio" value="none">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_none10" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_none10" class="mauticform-radiogrp-label">None</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_types_of_games_or_ex]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_types_of_games_or_ex_other11" type="radio" value="other">
+                    <label id="mauticform_radiogrp_label_what_types_of_games_or_ex_other11" for="mauticform_radiogrp_radio_what_types_of_games_or_ex_other11" class="mauticform-radiogrp-label">Other: Please explain</label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+            
+            
+     </div></div><div class="hide w-embed"><div id="gameDevExtraCode3">
+<div id="mauticform_gamedevelopersform_what_else_are_you_interes" data-validate="what_else_are_you_interes" data-validation-type="checkboxgrp" class="mauticform-row mauticform-checkboxgrp mauticform-field-5 mauticform-required">
+                <label class="mauticform-label" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Metaverseexperiencesforbigconsumerbrands1">What else are you interested in building?</label>
+                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[what_else_are_you_interes][]" id="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Metaverseexperiencesforbigconsumerbrands0" type="checkbox" value="Metaverse experiences for big consumer brands">
+                    <label id="mauticform_checkboxgrp_label_what_else_are_you_interes_Metaverseexperiencesforbigconsumerbrands0" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Metaverseexperiencesforbigconsumerbrands0" class="mauticform-checkboxgrp-label">Metaverse experiences for big consumer brands</label>
+                </div>
+                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[what_else_are_you_interes][]" id="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Web3P2EorL2Egames1" type="checkbox" value="Web3 P2E or L2E games">
+                    <label id="mauticform_checkboxgrp_label_what_else_are_you_interes_Web3P2EorL2Egames1" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Web3P2EorL2Egames1" class="mauticform-checkboxgrp-label">Web3 P2E or L2E games</label>
+                </div>
+                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[what_else_are_you_interes][]" id="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Digitaltwinsofreallifeexperiences2" type="checkbox" value="Digital twins of real life experiences">
+                    <label id="mauticform_checkboxgrp_label_what_else_are_you_interes_Digitaltwinsofreallifeexperiences2" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Digitaltwinsofreallifeexperiences2" class="mauticform-checkboxgrp-label">Digital twins of real life experiences</label>
+                </div>
+                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[what_else_are_you_interes][]" id="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Highimpactexperiencestosupportsocialcauseslikeglobalwarming3" type="checkbox" value="High impact experiences to support social causes like global warming">
+                    <label id="mauticform_checkboxgrp_label_what_else_are_you_interes_Highimpactexperiencestosupportsocialcauseslikeglobalwarming3" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Highimpactexperiencestosupportsocialcauseslikeglobalwarming3" class="mauticform-checkboxgrp-label">High impact experiences to support social causes like global warming</label>
+                </div>
+                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[what_else_are_you_interes][]" id="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Indiegames4" type="checkbox" value="Indie games">
+                    <label id="mauticform_checkboxgrp_label_what_else_are_you_interes_Indiegames4" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Indiegames4" class="mauticform-checkboxgrp-label">Indie games</label>
+                </div>
+                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[what_else_are_you_interes][]" id="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_AAAgames5" type="checkbox" value="AAA games">
+                    <label id="mauticform_checkboxgrp_label_what_else_are_you_interes_AAAgames5" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_AAAgames5" class="mauticform-checkboxgrp-label">AAA games</label>
+                </div>
+                <div class="mauticform-checkboxgrp-row">                    <input class="mauticform-checkboxgrp-checkbox" name="mauticform[what_else_are_you_interes][]" id="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Other6" type="checkbox" value="Other">
+                    <label id="mauticform_checkboxgrp_label_what_else_are_you_interes_Other6" for="mauticform_checkboxgrp_checkbox_what_else_are_you_interes_Other6" class="mauticform-checkboxgrp-label">Other</label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+            
+     </div></div><div class="form-hide w-embed"><div id="mauticform_wrapper_gamedevelopersform" class="mauticform_wrapper">
+    <form autocomplete="false" role="form" method="post" action="https://m.metaengine.gg/form/submit?formId=8" id="mauticform_gamedevelopersform" data-mautic-form="gamedevelopersform" enctype="multipart/form-data">
+        <div class="mauticform-error" id="mauticform_gamedevelopersform_error"></div>
+        <div class="mauticform-message" id="mauticform_gamedevelopersform_message"></div>
+        <div class="mauticform-innerform">
+            
+          <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+            <div id="mauticform_gamedevelopersform_what_is_your_role" data-validate="what_is_your_role" data-validation-type="radiogrp" class="mauticform-row mauticform-radiogrp mauticform-field-1 mauticform-required">
+                <label class="mauticform-label" for="mauticform_radiogrp_radio_what_is_your_role_GameDeveloper1">What is your role?</label>
+                <span class="mauticform-helpmessage">Choose One For Now</span>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_is_your_role]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_is_your_role_gamedeveloper0" type="radio" value="game developer">
+                    <label id="mauticform_radiogrp_label_what_is_your_role_gamedeveloper0" for="mauticform_radiogrp_radio_what_is_your_role_gamedeveloper0" class="mauticform-radiogrp-label">Game Developer</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_is_your_role]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_is_your_role_gamedesigner1" type="radio" value="game designer">
+                    <label id="mauticform_radiogrp_label_what_is_your_role_gamedesigner1" for="mauticform_radiogrp_radio_what_is_your_role_gamedesigner1" class="mauticform-radiogrp-label">Game Designer</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[what_is_your_role]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_what_is_your_role_otherpleaseexplain2" type="radio" value="other, please explain">
+                    <label id="mauticform_radiogrp_label_what_is_your_role_otherpleaseexplain2" for="mauticform_radiogrp_radio_what_is_your_role_otherpleaseexplain2" class="mauticform-radiogrp-label">Other, Please Explain</label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_gamedevelopersform_other" data-mautic-form-show-on="what_is_your_role:other, please explain" data-mautic-form-expr="in" class="mauticform-row mauticform-text mauticform-field-1  mauticform-field-hidden">
+                <label id="mauticform_label_gamedevelopersform_other" for="mauticform_input_gamedevelopersform_other" class="mauticform-label">Other</label>
+                <input id="mauticform_input_gamedevelopersform_other" name="mauticform[other]" value="" placeholder="Other" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+
+            <div id="mauticform_gamedevelopersform_are_you_currently_buildin" data-validate="are_you_currently_buildin" data-validation-type="radiogrp" class="mauticform-row mauticform-radiogrp mauticform-field-2 mauticform-required">
+                <label class="mauticform-label" for="mauticform_radiogrp_radio_are_you_currently_buildin_Yes1">Are you currently building anything?</label>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[are_you_currently_buildin]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_are_you_currently_buildin_yes0" type="radio" value="yes">
+                    <label id="mauticform_radiogrp_label_are_you_currently_buildin_yes0" for="mauticform_radiogrp_radio_are_you_currently_buildin_yes0" class="mauticform-radiogrp-label">Yes</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[are_you_currently_buildin]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_are_you_currently_buildin_no1" type="radio" value="no">
+                    <label id="mauticform_radiogrp_label_are_you_currently_buildin_no1" for="mauticform_radiogrp_radio_are_you_currently_buildin_no1" class="mauticform-radiogrp-label">No</label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="gameDeveloperExtraCodeInsert1"></div>
+
+
+            <div id="mauticform_gamedevelopersform_other2" class="mauticform-row mauticform-text mauticform-field-8">
+                <label id="mauticform_label_gamedevelopersform_other2" for="mauticform_input_gamedevelopersform_other2" class="mauticform-label">Other</label>
+                <input id="mauticform_input_gamedevelopersform_other2" name="mauticform[other2]" value="" placeholder="Other" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+
+          <div id="gameDeveloperExtraCodeInsert2"></div>
+
+            <div id="mauticform_gamedevelopersform_other1" data-mautic-form-show-on="what_types_of_games_or_ex:other" data-mautic-form-expr="in" class="mauticform-row mauticform-text mauticform-field-3  mauticform-field-hidden">
+                <label id="mauticform_label_gamedevelopersform_other1" for="mauticform_input_gamedevelopersform_other1" class="mauticform-label">Other</label>
+                <input id="mauticform_input_gamedevelopersform_other1" name="mauticform[other1]" value="" placeholder="Other" class="mauticform-input" type="text">
+                <span class="mauticform-errormsg" style="display: none;"></span>
+            </div>
+
+            <div id="gameDeveloperExtraCodeInsert3"></div>
+
+            <div id="mauticform_gamedevelopersform_would_you_be_interested_i" data-validate="would_you_be_interested_i" data-validation-type="radiogrp" class="mauticform-row mauticform-radiogrp mauticform-field-6 mauticform-required">
+                <label class="mauticform-label" for="mauticform_radiogrp_radio_would_you_be_interested_i_Yes1">Would you be interested in getting early access to a MetaEngine sandbox developer environment?</label>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[would_you_be_interested_i]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_would_you_be_interested_i_yes0" type="radio" value="yes">
+                    <label id="mauticform_radiogrp_label_would_you_be_interested_i_yes0" for="mauticform_radiogrp_radio_would_you_be_interested_i_yes0" class="mauticform-radiogrp-label">Yes</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[would_you_be_interested_i]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_would_you_be_interested_i_no1" type="radio" value="no">
+                    <label id="mauticform_radiogrp_label_would_you_be_interested_i_no1" for="mauticform_radiogrp_radio_would_you_be_interested_i_no1" class="mauticform-radiogrp-label">No</label>
+                </div>
+                <div class="mauticform-radiogrp-row">                    <input name="mauticform[would_you_be_interested_i]" class="mauticform-radiogrp-radio" id="mauticform_radiogrp_radio_would_you_be_interested_i_maybe2" type="radio" value="maybe">
+                    <label id="mauticform_radiogrp_label_would_you_be_interested_i_maybe2" for="mauticform_radiogrp_radio_would_you_be_interested_i_maybe2" class="mauticform-radiogrp-label">Maybe</label>
+                </div>
+                <span class="mauticform-errormsg" style="display: none;">This is required.</span>
+            </div>
+
+            <div id="mauticform_gamedevelopersform_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-7">
+                <button type="submit" name="mauticform[submit]" id="mauticform_input_gamedevelopersform_submit" value="" class="mauticform-button btn btn-default">APPLY TO JOIN</button>
+            </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="mauticform[formId]" id="mauticform_gamedevelopersform_id" value="8">
+        <input type="hidden" name="mauticform[return]" id="mauticform_gamedevelopersform_return" value="">
+        <input type="hidden" name="mauticform[formName]" id="mauticform_gamedevelopersform_name" value="gamedevelopersform">
+
+        </form>
+</div></div><div class="hide w-embed w-script"><script>
+
+var Webflow = Webflow || [];
+Webflow.push(function () {
+  // DOMready has fired
+  // May now use jQuery and Webflow api
+   $('#gameDevExtraCode1').appendTo('#gameDeveloperExtraCodeInsert1');
+   $("#gameDevExtraCode1").html($("#gameDeveloperExtraCodeOld1").html());
+	 $("#gameDeveloperExtraCodeOld1").remove(); 
+   
+   $('#gameDevExtraCode2').appendTo('#gameDeveloperExtraCodeInsert2');
+   $("#gameDevExtraCode2").html($("#gameDeveloperExtraCodeOld2").html());
+	 $("#gameDeveloperExtraCodeOld2").remove(); 
+   
+   $('#gameDevExtraCode3').appendTo('#gameDeveloperExtraCodeInsert3');
+   $("#gameDevExtraCode3").html($("#gameDeveloperExtraCodeOld3").html());
+	 $("#gameDeveloperExtraCodeOld3").remove(); 
+
+
+	
+
+
+  $("#gd-step2 :input").change(function() {
+
+		$('#modal_8 #mauticform_radiogrp_radio_what_is_your_role_gamedeveloper0').prop( "checked", $('#gd-game-dev').prop("checked"));
+    
+		$('#modal_8 #mauticform_radiogrp_radio_what_is_your_role_gamedesigner1').prop( "checked",$('#gd-game-designer').prop( "checked"));
+    
+    if ($(this).val() == $('#gd-game-designer').val() || $(this).val() == $('#gd-game-dev').val()) {
+    	$('#gd-other-input').val('');
+    }
+
+	if ($('#gd-other-input').val() != "") {
+  	$('#gd-game-dev').prop( "checked", false);
+    $('#gd-game-designer').prop( "checked", false);
+    $('#gd-step2 .fs_radio-1_button.w--redirected-checked').removeClass('w--redirected-checked');
+    $('#modal_8 #mauticform_radiogrp_radio_what_is_your_role_otherpleaseexplain2').prop( "checked", true);
+    $('#modal_8 #mauticform_input_gamedevelopersform_other').val($('#gd-other-input').val());
+  }
+  
+  
+		var gd_step2_checked = $('#modal_8 #mauticform_gamedevelopersform_what_is_your_role input:radio:checked').length;
+  
+  if (gd_step2_checked == 1 && $('#gd-other-input').val() == '') {
+  	$("#gd-step2").siblings('.button.is-next').removeClass('is-disabled');
+  }
+  
+  if (gd_step2_checked == 0 && $('#gd-other-input').val() != '') {
+  	$("#gd-step2").siblings('.button.is-next').removeClass('is-disabled');
+  }
+  
+  if (gd_step2_checked == 0 && $('#gd-other-input').val() == '') {
+  	$("#gd-step2").siblings('.button.is-next').addClass('is-disabled');
+  }
+
+});
+
+
+  $("#gd-step3 :input").change(function() {
+
+		$('#modal_8 #mauticform_radiogrp_radio_are_you_currently_buildin_yes0').prop( "checked", $('#gd-step3-yes').prop("checked"));
+    
+		$('#modal_8 #mauticform_radiogrp_radio_are_you_currently_buildin_no1').prop( "checked",$('#gd-step3-no').prop( "checked"));
+
+
+		var gd_step3_checked = $('#modal_8 #mauticform_gamedevelopersform_are_you_currently_buildin input:radio:checked').length;
+
+
+	 if (gd_step3_checked == 1) {
+  	$("#gd-step3").siblings('.button.is-next').removeClass('is-disabled');
+  } else {
+  	$("#gd-step3").siblings('.button.is-next').addClass('is-disabled');
+  }
+  
+
+});
+
+	$('#gd-select-other').css('opacity',0.25);
+	$('#gd-select-other').css('pointer-events','none');
+
+  $("#gd-step4 :input").change(function() {
+
+	$( "#modal_8 #mauticform_gamedevelopersform_what_types_of_games_or_ex1 input" ).each(function(  ) {
+   if ($('#gd-select').val() == $(this).val()) {
+   	   		$(this).prop( "checked", true);
+   } else {
+		   		$(this).prop( "checked", false);
+   }
+});
+
+
+	if ($('#gd-select').val() != '') {
+  	$("#gd-step4").siblings('.button.is-next').removeClass('is-disabled');  
+  } else {
+  	$("#gd-step4").siblings('.button.is-next').addClass('is-disabled');  
+  }
+  
+  if ($('#gd-select').val() == 'other: please explain') {
+  	$('#gd-select-other').css('opacity',1);
+		$('#gd-select-other').css('pointer-events','auto');
+  	if ($('#gd-select-other').val() != '') {
+    	$('#modal_8 #mauticform_input_gamedevelopersform_other2').val($('#gd-select-other').val());
+  		$("#gd-step4").siblings('.button.is-next').removeClass('is-disabled');
+    } else {
+	  	$("#gd-step4").siblings('.button.is-next').addClass('is-disabled');      
+    }
+  } else {
+  	$('#gd-select-other').css('opacity',0.25);
+		$('#gd-select-other').css('pointer-events','none');
+  	$('#gd-select-other').val('');
+  }
+  
+});
+
+
+	$('#gd-select-other').css('opacity',0.25);
+	$('#gd-select-other').css('pointer-events','none');
+
+  $("#gd-step5 :input").change(function() {
+
+	$( "#modal_8 #mauticform_gamedevelopersform_what_types_of_games_or_ex input" ).each(function(  ) {
+   if ($('#gd-select1').val() == $(this).val()) {
+   	   		$(this).prop( "checked", true);
+   } else {
+		   		$(this).prop( "checked", false);
+   }
+});
+
+
+	if ($('#gd-select1').val() != '') {
+  	$("#gd-step5").siblings('.button.is-next').removeClass('is-disabled');  
+  } else {
+  	$("#gd-step5").siblings('.button.is-next').addClass('is-disabled');  
+  }
+  
+  if ($('#gd-select1').val() == 'other') {
+  	$('#gd-select1-other').css('opacity',1);
+		$('#gd-select1-other').css('pointer-events','auto');
+  	if ($('#gd-select1-other').val() != '') {
+    	$('#modal_8 #mauticform_input_gamedevelopersform_other1').val($('#gd-select1-other').val());
+  		$("#gd-step5").siblings('.button.is-next').removeClass('is-disabled');
+    } else {
+	  	$("#gd-step5").siblings('.button.is-next').addClass('is-disabled');      
+    }
+  } else {
+  	$('#gd-select1-other').css('opacity',0.25);
+		$('#gd-select1-other').css('pointer-events','none');
+  	$('#gd-select1-other').val('');
+  }
+  
+});
+
+  $("#gd-step6 :input").change(function() {
+
+
+
+	$( "#modal_8 #mauticform_gamedevelopersform_what_else_are_you_interes input" ).each(function() {
+   if ($('#gd-select2').val() == $(this).val()) {
+   	   		$(this).prop( "checked", true);
+   } else {
+		   		$(this).prop( "checked", false);
+   }
+});
+
+
+	if ($('#gd-select2').val() != '') {
+  	$("#gd-step6").siblings('.button.is-next').removeClass('is-disabled');  
+  } else {
+  	$("#gd-step6").siblings('.button.is-next').addClass('is-disabled');  
+  }
+  
+
+});
+
+
+  $("#gd-step7 :input").change(function() {
+
+
+		$('#modal_8 #mauticform_radiogrp_radio_would_you_be_interested_i_yes0').prop( "checked", $('#gd-step7-yes').prop("checked"));
+    
+		$('#modal_8 #mauticform_radiogrp_radio_would_you_be_interested_i_no1').prop( "checked",$('#gd-step7-no').prop( "checked"));
+    
+    	$('#modal_8 #mauticform_radiogrp_radio_would_you_be_interested_i_maybe2').prop( "checked",$('#gd-step7-maybe').prop( "checked"));
+
+
+		var gd_step7_checked = $('#modal_8 #mauticform_gamedevelopersform_would_you_be_interested_i input:radio:checked').length;
+    
+    	 if (gd_step7_checked == 1) {
+  	$("#gd-step7").siblings('.button.is-submit').removeClass('is-disabled');
+  } else {
+  	$("#gd-step7").siblings('.button.is-submit').addClass('is-disabled');
+  }
+
+});
+
+	var gdSubmited = false;
+  
+  $('#modal_8 .button.is-button-bigger.is-modal.is-submit').on('click', function() {
+  gdSubmited = true;
+	$('#mauticform_input_gamedevelopersform_submit').click();
+  $('.modal_count').hide();
+});
+
+
+setInterval(function(){ 
+    if (gdSubmited == true) {
+    	$('#modal_8').find($('.modal_slider-arrow.is-back')).hide();
+    }
+    
+}, 1000);
+	
+	
+});
+
+
+
+
+
+</script></div></div><p class="modal_count"><span class="modal_count-up">1</span>/7</p></div></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=636c0fe2570eeae70c2de171" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/636c0fe2570eeae70c2de171/js/webflow.1a31f0c3a.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/24163964.js"></script>
+
+<script>
+    (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+        w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+        m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://m.metaengine.gg/mtc.js','mt');
+
+    mt('send', 'pageview');
+</script>
+
+<script async>
+  
+  
+  
+ if (Cookies.get('FormCaptured') == undefined) {
+    Cookies.set('FormCaptured', 'false');
+} 
+    /** This section is only needed once per page if manually copying **/
+    if (typeof MauticSDKLoaded == 'undefined') {
+        var MauticSDKLoaded = true;
+        var head            = document.getElementsByTagName('head')[0];
+        var script          = document.createElement('script');
+        script.type         = 'text/javascript';
+        script.src          = 'https://m.metaengine.gg/media/js/mautic-form.js?vf1833237';
+        script.onload       = function() {
+            MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = 'https://m.metaengine.gg';
+        var MauticLang   = {
+            'submittingMessage': "Please wait..."
+        }
+    }else if (typeof MauticSDK != 'undefined') {
+        MauticSDK.onLoad();
+    }
+    
+    function footerForm() {
+    	$('.footer1_component .footer1_form').hide();
+			$('.footer1_component .footer1_form').addClass('hide');
+			$('.footer1_component .footer1_form').removeClass('footer1_form');
+			$('.footer1_component .success-message').removeClass('hide');
+      		Cookies.set('FormCaptured','true');
+     
+      
+    }
+  
+
+  
+  
+    
+</script>
+
+
+<script defer>  
+var num = 20,
+    lastScrollTop = 0;
+$(window).bind("scroll", function () {
+    var e = $(this).scrollTop();
+    $(window).scrollTop() > num
+        ? ($(".navbar2_component").addClass("is-sticked"),
+          e > lastScrollTop ? $(".navbar2_component").css("top", "-120px") : $(".navbar2_component").css("top", "0px"),
+          "/nonexisting" == window.location.pathname &&
+              ("light" == Cookies.get("mode")
+                  ? (document.querySelectorAll(".navbar2_logo").forEach((e) => e.classList.remove("is-active")),
+                    document.querySelectorAll(".btn.is-navbar").forEach((e) => e.classList.remove("is-active")),
+                    document.querySelectorAll(".navbar2_link").forEach((e) => e.classList.remove("is-active")),
+                    document.querySelectorAll(".btn.is-theme").forEach((e) => e.classList.remove("is-active")),
+                    document.querySelectorAll(".menu-icon2").forEach((e) => e.classList.remove("is-active")))
+                  : (document.querySelectorAll(".navbar2_logo").forEach((e) => e.classList.add("is-active")),
+                    document.querySelectorAll(".btn.is-navbar").forEach((e) => e.classList.add("is-active")),
+                    document.querySelectorAll(".navbar2_link").forEach((e) => e.classList.add("is-active")),
+                    document.querySelectorAll(".btn.is-theme").forEach((e) => e.classList.add("is-active")),
+                    document.querySelectorAll(".menu-icon2").forEach((e) => e.classList.add("is-active")))))
+        : ($(".navbar2_component").removeClass("is-sticked"),
+          "/nonexisting" == window.location.pathname &&
+              (document.querySelectorAll(".navbar2_logo").forEach((e) => e.classList.remove("is-active")),
+              document.querySelectorAll(".btn.is-navbar").forEach((e) => e.classList.remove("is-active")),
+              document.querySelectorAll(".navbar2_link").forEach((e) => e.classList.remove("is-active")),
+              document.querySelectorAll(".btn.is-theme").forEach((e) => e.classList.remove("is-active")),
+              document.querySelectorAll(".menu-icon2").forEach((e) => e.classList.remove("is-active")))),
+        (lastScrollTop = e);
+});
+var vids = $("video");
+$.each(vids, function () {
+    this.controls = !1;
+}),
+    $("video").each(function (e) {
+        $(this).trigger("play");
+    }),
+    null == Cookies.get("mode") && Cookies.set("mode", "light");
+var footerSubmited = !1;
+function makeDark() {
+    document.querySelectorAll(".home-hero-new_svg").forEach((e) => e.classList.add("is-active")),
+    document.querySelectorAll("body").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".heading_2").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll("p").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".button").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".page-wrapper").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".marquee-text").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".experience_list").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".footer1_component").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".heading_1").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".overlay_base").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".community-join_list-item").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".button.is-community-create").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".community-create_item").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform-hero_image-icon").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform-cloud_item").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform-tabs_link").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform-tabs_item-image-mask").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".careers-positions_item-link").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".careers-arrow_wrap").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform-tabs_item-image-mask-black").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform-tabs_item-image").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform_tabs_item-overlay").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".form-input.is-footer").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".company-team_title").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".platform-cta_video-wrap").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".navbar2_component").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".footer1_text-underline").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll("blockquote").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".bog-item-content").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".categories-list").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-page-head").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-content").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-post-sidebar").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-item").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".related-articles").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-content_tags_item-link").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-content_item-read-more").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-content_item").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog_tags-wrapper-overlay").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-content_related-article-link").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-content_category-link").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-content_item-link").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text ol").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text ul").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text figcaption").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-header_featured-overlay").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-header_featured-content").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-header_featured-content .blog-header_featured-heading").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-header_featured-text").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".blog-header_btn").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".navbar2_links-wrap").forEach((e) => e.classList.add("is-active")),
+        document.querySelectorAll(".whr_embed_hook").forEach((e) => e.classList.add("is-active")),
+        "/nonexisting" != window.location.pathname &&
+            (document.querySelectorAll(".navbar2_logo").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".btn.is-navbar").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".navbar2_link").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".btn.is-theme").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".menu-icon2").forEach((e) => e.classList.add("is-active"))),
+        $(window).scrollTop() > num &&
+            (document.querySelectorAll(".navbar2_logo").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".btn.is-navbar").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".navbar2_link").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".btn.is-theme").forEach((e) => e.classList.add("is-active")),
+            document.querySelectorAll(".menu-icon2").forEach((e) => e.classList.add("is-active"))),
+        $(".navbar2_theme-icon.is-moon").hide(),
+        $(".navbar2_theme-icon.is-sun").show(),
+        Cookies.set("mode", "dark");
+}
+function makeLight() {
+    document.querySelectorAll(".home-hero-new_svg").forEach((e) => e.classList.remove("is-active")),
+    document.querySelectorAll("body").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".heading_2").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll("p").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".button").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".page-wrapper").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".marquee-text").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".experience_list").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".footer1_component").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".heading_1").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".overlay_base").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".community-join_list-item").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".button.is-community-create").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".community-create_item").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform-hero_image-icon").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform-cloud_item").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform-tabs_link").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform-tabs_item-image-mask").forEach((e) => e.classList.remove("is-active")),
+      document.querySelectorAll(".navbar2_links-wrap").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".careers-positions_item-link").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".careers-arrow_wrap").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform-tabs_item-image-mask-black").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform-tabs_item-image").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform_tabs_item-overlay").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".form-input.is-footer").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".company-team_title").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".platform-cta_video-wrap").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".navbar2_component").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".footer1_text-underline").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll("blockquote").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".bog-item-content").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".categories-list").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-page-head").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-content").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-post-sidebar").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-item").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".related-articles").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-content_tags_item-link").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-content_item-read-more").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-content_item").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog_tags-wrapper-overlay").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-content_related-article-link").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-content_category-link").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-content_item-link").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text ol").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text ul").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-inner-rich-text figcaption").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-header_featured-overlay").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-header_featured-content").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-header_featured-content .blog-header_featured-heading").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-header_featured-text").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".blog-header_btn").forEach((e) => e.classList.remove("is-active")),
+        document.querySelectorAll(".whr_embed_hook").forEach((e) => e.classList.remove("is-active")),
+        "/nonexisting" != window.location.pathname &&
+            (document.querySelectorAll(".navbar2_logo").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".btn.is-navbar").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".navbar2_link").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".btn.is-theme").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".menu-icon2").forEach((e) => e.classList.remove("is-active"))),
+        $(window).scrollTop() > num &&
+            (document.querySelectorAll(".navbar2_logo").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".btn.is-navbar").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".navbar2_link").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".btn.is-theme").forEach((e) => e.classList.remove("is-active")),
+            document.querySelectorAll(".menu-icon2").forEach((e) => e.classList.remove("is-active"))),
+        $(".navbar2_theme-icon.is-moon").show(),
+        $(".navbar2_theme-icon.is-sun").hide(),
+        Cookies.set("mode", "light");
+}
+"light" == Cookies.get("mode") ? makeLight() : makeDark(),
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".btn.is-theme").forEach((e) => {
+            e.addEventListener("click", function () {
+                (this.x = ((this.x || 0) + 1) % 2), "light" == Cookies.get("mode") ? makeDark() : makeLight();
+            });
+        });
+    }),
+    $(window).scrollTop($(window).scrollTop() + 1),
+    $(".footer1_legal-list").width($(".footer1_menu-wrapper").width()),
+    $(window).resize(function () {
+        $(".footer1_legal-list").width($(".footer1_menu-wrapper").width());
+    }),
+    $(".button.is-button-bigger.is-modal").on("click", function () {
+        var e = $(this).closest(".modal_item").find(".modal_count-up");
+        e.text(parseInt(e.text()) + 1);
+    }),
+    $(".footer1_credit-text-year").text(new Date().getFullYear());
+
+  $('.navbar2_menu-button').click(function() {
+  var clicks = $(this).data('clicks');
+  if (clicks) {
+      $('.navbar2_component').removeClass('navbar2_opened');
+  } else {
+      $('.navbar2_component').addClass('navbar2_opened');
+  }
+  $(this).data("clicks", !clicks);
+});
+  
+  if (Cookies.get("website-visited") == undefined) {
+ window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?(Cookies.set("mode","dark"),"dark"==Cookies.get("mode")?makeDark():makeLight()):(Cookies.set("mode","light"),"light"==Cookies.get("mode")?makeLight():makeDark());
+  }
+  Cookies.set("website-visited","true");
+</script></body></html>
